@@ -1,0 +1,44 @@
+.animes .zumbi{
+    width:45%;
+	height:400px;
+	right:200px;
+	border-radius:20px;
+	display:flex;
+    float: left;
+	top: 30px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.animes .ragna{
+    width:45%;
+	height:400px;
+	right:200px;
+	border-radius:20px;
+	display:flex;
+    float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+.animes .shin{
+    width:45%;
+	height:400px;
+	right:200px;
+	border-radius:20px;
+	display:flex;
+    float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+.animes .youj{
+    width:45%;
+	height:400px;
+	right:200px;
+	border-radius:20px;
+	display:flex;
+    float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+}
