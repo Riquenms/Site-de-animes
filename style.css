@@ -5,6 +5,11 @@ body{
 	background-color:#1C1C1C
 }
 
+header{
+	position: relative;
+    padding: 0 2rem;
+}
+
 .cBoxLeft {
 		border: 2px ;
 		float:left;
@@ -28,26 +33,45 @@ body{
 	}
 	
 	.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    height: 80px;
-	border-radius: 10px;
+		width: 100%;
+		height: 60px;
+		max-width: 1600px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 }
+
+
 
 .Pagenot .menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    height: 80px;
-	background-color: #4F4F4F;
+    width: 100%;
+		height: 60px;
+		max-width: 1600px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 }
 
-.logo{
+.logo {
+	font-size: 1.5rem;
+    font-weight: bold;
+	margin-top: -30px;
+	color: #483D8B;
+}
+
+.logo a:hover{
+	color: #6A5ACD;
+}
+
+.logo a{
 	text-decoration: none;
-	color:white;
+}
+
+
+.easteregg{
+	color: black;
 }
 
 .cabeçalho{
@@ -55,10 +79,11 @@ body{
     gap: 550px;
 }
 
+
 nav ul li{
     display: inline-block;
     margin-right: 30px;
-    
+	transition: transform 0.3s ease;
 }
 
 nav ul li a{
@@ -66,12 +91,16 @@ nav ul li a{
     color: white;
 }
 
-.line{
-    height: 1px;
-    background-color: #ddd;
-    width: 100%;
+nav ul li a:hover {
+	color:	#6A5ACD;
+	transform: scale(1.2);
+	transition: transform 0.3s ease; 
 }
 
+nav ul li:hover {
+	transform: scale(1.2);
+	transition: transform 0.3s ease; 
+}
 
 h2{
 	height: 10px;
@@ -85,12 +114,18 @@ h2{
 	background-color: #808080;
 	margin-bottom: 35px;
 	margin-top: 55px;
+	transition: transform 0.5s ease; 
 }
 
 .noticia1 a{
 	text-decoration: none;
 	color: #DCDCDC;
 	display: flex;
+}
+
+.noticia1:hover{
+	transform: scale(1.1); 
+	transition: transform 0.3s ease; 
 }
 
 .noticia1 .slime{
@@ -113,12 +148,18 @@ h2{
 	background-color: #808080;
 	margin-bottom: 35px;
 	margin-top: 55px;
+	transition: transform 0.5s ease; 
 }
 
 .noticia2 a{
 	text-decoration: none;
 	color: #DCDCDC;
 	display: flex;
+}
+
+.noticia2:hover{
+	transform: scale(1.1); 
+	transition: transform 0.3s ease; 
 }
 
 .noticia2 .shin{
@@ -139,12 +180,18 @@ h2{
 	background-color: #808080;
 	margin-bottom: 35px;
 	margin-top: 55px;
+	transition: transform 0.5s ease; 
 }
 
 .noticia3 a{
 	text-decoration: none;
 	color: #DCDCDC;
 	display: flex;
+}
+
+.noticia3:hover{
+	transform: scale(1.1); 
+	transition: transform 0.3s ease; 
 }
 
 .noticia3 .zoom{
@@ -156,6 +203,7 @@ h2{
 .textonot3{
 	text-align:center;
 	margin-top: 50px;
+	color: #DCDCDC;
 }
 
 
@@ -165,12 +213,18 @@ h2{
 	background-color: #808080;
 	margin-bottom: 35px;
 	margin-top: 55px;
+	transition: transform 0.5s ease; 
 }
 
 .noticia4 a{
 	text-decoration: none;
 	color: #DCDCDC;
 	display: flex;
+}
+
+.noticia4:hover{
+	transform: scale(1.1); 
+	transition: transform 0.3s ease; 
 }
 
 .noticia4 .juju{
@@ -195,10 +249,11 @@ h2{
 	top: 30px;
 	margin-left: 10px;
 	margin-top: 20px;
+	 transition: transform 0.5s ease;
 }
 
 .zumbi:hover{
-	transform: scale(1.2); 
+	transform: scale(1.1); 
 	transition: transform 0.3s ease; 
 }
 
@@ -211,10 +266,11 @@ h2{
     float: right;
 	margin-right: 10px;
 	margin-top: 20px;
+	 transition: transform 0.5s ease;
 }
 
 .ragna:hover{
-	transform: scale(1.2); 
+	transform: scale(1.1); 
 	transition: transform 0.3s ease; 
 }
 
@@ -227,10 +283,11 @@ h2{
     float: left;
 	margin-left: 10px;
 	margin-top: 20px;
+	 transition: transform 0.5s ease;
 }
 
-.shin:hover{
-	transform: scale(1.2); 
+.animes .shin:hover{
+	transform: scale(1.1); 
 	transition: transform 0.3s ease; 
 }
 
@@ -243,10 +300,11 @@ h2{
     float: right;
 	margin-right: 10px;
 	margin-top: 20px;
+	 transition: transform 0.5s ease;
 }
 
 .youj:hover{
-	transform: scale(1.2); 
+	transform: scale(1.1); 
 	transition: transform 0.3s ease; 
 }
 
@@ -259,6 +317,10 @@ h2{
 	background-color: 	#4F4F4F;
 	margin-top: 35px;
 	margin-left:250px;
+}
+
+.infoani h1{
+	text-align: center;
 }
 
 .infoani .kono{
@@ -287,12 +349,17 @@ h2{
     font-size: inherit;
     line-height: 1.55;
 	margin-left: 25px;
+	color: #DCDCDC;
+}
+
+b{
+	color: 	#778899;
 }
 
 .bloco2 .sinopse{
 	font-family: 'Times New Roman', Times, serif;
 	margin-left: 15px;
-	
+	color: #DCDCDC;
 	
 }
 
@@ -304,10 +371,12 @@ h2{
 		border-radius:20px;
 		background-color: 	#4F4F4F;
 		margin-top: 35px;
+		color: #DCDCDC;
+		
 }
 
 .page h1{
-	margin-left: 5%;
+	margin-left: 0%;
 	text-align: center;
 }
 
@@ -355,7 +424,7 @@ h2{
 
 .notaba a{
 	text-decoration: none;
-	color: black;
+	color: #DCDCDC;
 	display: flex;
 }
 
@@ -382,6 +451,7 @@ h2{
 		
 }
 
+
 .guerra{
 		height: 300px;
 		width: 100%;	
@@ -405,4 +475,78 @@ h2{
 	height: 690px;
 	margin-left:3%;
 	width: 500px;
+}
+
+.ContatoPag{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-top: -100px;
+}
+
+.ContatoPag h1{
+	font-size: 3rem;
+	color: #fff;
+	margin-bottom: 2rem;
+	text-align: center;
+	line-height: 1.2;
+}
+
+.form{
+	width: 100%;
+	max-width: 32rem;
+	font-size: 1.125rem;
+}
+
+.form label, .form input, .form textarea, .form button{
+	display: block;
+	width: 100%;
+}
+
+.form label{
+	color: #fff;
+	line-height: 1;
+	margin-bottom: 0,5rem;
+}
+
+.form textarea{
+	font: inherit;
+	padding: 0.8rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius:8px;
+	transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea{
+	min-height: 13rem;
+	resize: vertical;
+}
+
+.form input:hover,.form input:focus,.form textarea:hover,.form textarea:focus{
+	outline: none;
+	border-color: black;
+	box-shadow: 0 0 0 3px #4F4F4F;
+}
+
+.form button{
+	display: block;
+	padding: 1rem;
+	background: #6495ED;
+	color: #fff;
+	font: inherit;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.form button:hover, .form button:focus{
+	outline: none;
+	background-color: #483D8B;
 }
